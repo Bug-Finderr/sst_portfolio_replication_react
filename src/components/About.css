@@ -1,14 +1,62 @@
-.about {
-    padding: 50px 20px;
-    text-align: center;
+#about {
+    margin-top: 10vh;
+    padding: 20px 20px;
+    display: flex;
+    text-align: left;
+    background: #131516;    /* todo: check color*/
 }
 
-.about h2 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
-}
-
-.about p {
+#about p {
     font-size: 1.2em;
-    color: #333;
+}
+
+.drawer-profile {
+    margin-top: 0;
+}
+
+.social-icons {
+    margin-top: 3vh;
+}
+
+.icons {
+    transform: scale(1.5);
+}
+
+.right {
+    margin-left: 2vw;
+}
+
+#about h1 {
+    font-size: 2.5em;
+    margin: 3vh 0 0;
+}
+
+#about h4 {
+    color: gray;
+    margin: 2.5vh 0 4vh 0;
+}
+
+.download-res {
+    margin-right: 1vw;
+    background-color: #01A042;
+    padding: 10px 20px;
+}
+
+.contact-me {
+    background-color: #0044B4;
+    padding: 10px 20px;
+}
+
+.about-info {
+    margin: 5vh 0 4vh 0;
+    padding: 0;
+}
+
+#about li {
+    display: flex;
+    color: darkgray;
+}
+
+.title {
+    color: white;
 }
