@@ -1,23 +1,74 @@
-.projects {
-    padding: 50px 20px;
-    text-align: center;
+#project {
+    margin: 15vh 0 0;
 }
 
-.projects h2 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
+#project h2 {
+    margin: 0 0 0 1vw;
 }
 
 .projects-container {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
+    margin: 10px 0 0;
+    padding: 20px;
+    gap: 1rem;
+    justify-content: space-between;
 }
 
-.project {
-    background: #f4f4f4;
-    padding: 20px;
-    border-radius: 5px;
-    width: 300px;
+.project-card {
+    display: flex;
+    flex-direction: column;
+    flex: 0 1 calc(33.33% - 2rem);
+    background: #131516;
+    /*border: 1px solid #131516;*/
+    border-radius: 8px;
+    overflow: hidden;
+    width: 80px;
+    margin-bottom: 2rem;
+}
+
+.project-image-container {
+    overflow: hidden;
+    color: white;
+}
+
+.project-image {
+    width: 100%;
+    transition: transform 0.5s ease;
+}
+
+.project-card:hover .project-image {
+    transform: scale(1.1);
+}
+
+.project-details {
+    padding: 1rem;
+}
+
+.project-language {
+    font-size: 0.9rem;
+}
+
+.project-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 0.5rem 0;
+}
+
+.project-title a {
+    text-decoration: none;
+}
+
+.project-description {
+    font-size: 1rem;
+    color: gray;
+}
+
+.project-stats {
+    margin-top: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 1rem 1rem;
+    font-size: 0.9rem;
+    color: dimgrey;
 }
