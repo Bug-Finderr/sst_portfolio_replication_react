@@ -1,6 +1,7 @@
 import Navbar from './components/Navbar';
 import About from './components/About';
-import Skills from './components/Skills';
+import Portfolio from './components/Portfolio';
+import Interest from './components/Interest';
 import Project from './components/Project';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
@@ -11,7 +12,8 @@ const App = () => {
         <div className="app">
             <Navbar />
             <About />
-            <Skills />
+            <Portfolio />
+            <Interest />
             <Project />
             <Contact />
             <Footer />
