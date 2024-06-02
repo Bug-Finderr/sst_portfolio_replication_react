@@ -1,0 +1,26 @@
+#interest {
+    margin-top: 15vh;
+}
+
+#interest h2 {
+    margin: 0 0 0 1vw;
+}
+
+#interest .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#interest .card {
+    width: 100px;
+    margin: 20px;
+    padding: 40px 20px;
+    background: #131516;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#interest p {
+    margin: 16px 0 0;
+}

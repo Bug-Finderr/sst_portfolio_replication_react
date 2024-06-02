@@ -1,5 +1,5 @@
 import {FaBookBookmark, FaCode, FaRobot} from "react-icons/fa6";
-import "./Portfolio.css"
+import "./Portfolio.css";
 
 const Portfolio = () => {
     return (
