@@ -2,6 +2,7 @@
     margin-top: 10vh;
     padding: 20px 20px;
     display: flex;
+    flex-wrap: wrap;
     text-align: left;
     background: #131516;
 }
@@ -12,10 +13,14 @@
 
 #about .drawer-profile {
     margin-top: 0;
+    flex: 1;
+    min-width: 300px;
+    text-align: center;
 }
 
 #about .icons {
     transform: scale(1.5);
+    transition: transform 0.3s;
 }
 
 #about .icons:hover {
@@ -24,6 +29,8 @@
 
 .right {
     margin-left: 2vw;
+    flex: 2;
+    min-width: 300px;
 }
 
 #about h1 {
@@ -36,15 +43,19 @@
     margin: 2.5vh 0 4vh 0;
 }
 
+.download-res, .contact-me {
+    display: inline-block;
+    padding: 10px 20px;
+    color: white;
+}
+
 .download-res {
     margin-right: 1vw;
     background-color: #01A042;
-    padding: 10px 20px;
 }
 
 .contact-me {
     background-color: #0044B4;
-    padding: 10px 20px;
 }
 
 .about-info {
@@ -59,4 +70,58 @@
 
 .title {
     color: white;
+}
+
+@media (max-width: 1024px) {
+    #about {
+        margin: 5vh 2rem;
+        border-radius: 5px;
+    }
+}
+
+@media (max-width: 768px) {
+    #about {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #about .drawer-profile {
+        margin-top: 5vh;
+    }
+
+    #about h1 {
+        font-size: 2em;
+        text-align: center;
+    }
+
+    #about h4 {
+        margin: 2vh 0 3vh 0;
+        text-align: center;
+    }
+
+    .right {
+        margin-left: 0;
+    }
+
+    .btn {
+        display: flex;
+        justify-content: center;
+        gap: 2vw;
+    }
+
+    .download-res, .contact-me {
+        padding: 10px 15px;
+    }
+
+    .about-info {
+        margin: 3vh 0 2vh 0;
+    }
+
+    .about-info li {
+        display: flex;
+        flex-direction: column;
+        margin: 12px 0;
+        align-items: center;
+        text-align: center;
+    }
 }

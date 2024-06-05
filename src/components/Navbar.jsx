@@ -62,7 +62,7 @@ const NavBar = () => {
             <div className="navbar-container">
                 <div className="navbar-left">
                     <button className="drawer-btn" onClick={toggleDrawer}>
-                        <FaBars/>
+                        <FaBars border="none"/>
                     </button>
                     {drawerOpen && (
                         <div className="drawer" ref={drawerRef}>

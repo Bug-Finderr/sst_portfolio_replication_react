@@ -2,14 +2,21 @@
     text-align: center;
     padding: 20px;
     color: gray;
-    margin: 3rem 0;
+    margin: 2rem 0;
 }
 
 .footer h2 {
-    font-size: 1.1rem;
+    font-size: 1rem;
     margin: 0;
 }
 
 .footer p {
-    margin: 0.5rem;
+    margin: 0.3rem;
+    font-size: 0.5rem;
+}
+
+@media (max-width: 768px) {
+    .footer {
+        padding: 10px;
+    }
 }

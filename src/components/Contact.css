@@ -1,16 +1,17 @@
 #contact {
     margin-top: 10vh;
+    padding: 0 2rem;
 }
 
-#contact h2 {
-    margin: 0 0 0 1vw;
-}
+/*#contact h2 {*/
+/*    margin: 0 0 0 1vw;*/
+/*}*/
 
 .contact-container {
     display: grid;
     place-items: center;
     padding: 2.5rem;
-    margin-top: 1.5rem;
+    /*margin-top: 1.5rem;*/
     background-color: #131516;
     border-radius: 5px;
 }
@@ -22,7 +23,33 @@
 
 .contact-icons {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     gap: 0.75rem;
     transform: scale(2.5);
+}
+
+
+@media (max-width: 768px) {
+    #contact {
+        margin-top: 5vh;
+        padding: 0 1rem;
+    }
+
+    /*#contact h2 {*/
+    /*    text-align: center;*/
+    /*}*/
+
+    .contact-container {
+        padding: 1.5rem;
+    }
+
+    .contact-container h3 {
+        margin: 0 0 1.2rem 0;
+    }
+
+    .contact-icons {
+        gap: 0.5rem;
+        transform: scale(2);
+    }
 }

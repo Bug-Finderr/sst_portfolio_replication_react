@@ -10,7 +10,7 @@ import {
 const Contact = () => {
     return (
         <section id="contact">
-            <h2>Contact</h2>
+            {/*<h2>Contact</h2>*/}
             <div className="contact-container">
                 <h3>Find me on</h3>
                 <div className="contact-icons">
